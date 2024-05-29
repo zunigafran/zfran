@@ -18,6 +18,9 @@ module.exports = {
         secondary: '#2b2b3d',
         accent: '#4d4d5e',
     },
+    boxShadow: {
+      'fz': '5px 5px rgba(0, 0, 0, .1)',
+    }
   },
   plugins: [],
 };
