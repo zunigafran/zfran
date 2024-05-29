@@ -144,19 +144,9 @@ export default function Home() {
       <section className="container mx-auto py-8 sm:py-16 lg:py-24">
   <h2 className="block antialiased tracking-normal text-4xl text-center leading-1 !leading-snug lg:!text-4xl">Professional Experience</h2>
       <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
-        <div className="transition-all duration-200 bg-accent border-gray-200 shadow-lg cursor-pointer hover:bg-accent-50">
-          <button type="button" id="job1" data-state="closed" className="flex items-center accordion-header justify-between w-full px-4 py-5 sm:p-6">
-            <h5 className="flex text-lg font-semibold">Springboard</h5>
-            <p className="flex text-md font-normal">Software Engineer</p>
-            <i class="fas fa-plus"></i>
-          </button>
-        </div>
-      </div>
-
-      <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
         <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
-                class="max-h-0 overflow-hidden flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6" id="job1">
+                class="flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6">
                 Account Expeditor @ ProSource Wholesale
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -170,11 +160,12 @@ export default function Home() {
                 </div>
             </summary>
             <div class="pl-6 pb-4">This is the first item's accordion body.</div>
+            <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon"></img>
         </details>
-        <details class="group">
+        <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
                 class="flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6">
-                Accordion item 02
+                Software Engineer @ Springboard
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="block h-5 w-5 group-open:hidden">
@@ -188,7 +179,7 @@ export default function Home() {
             </summary>
             <div class="pb-4">This is the second item's accordion body.</div>
         </details>
-        <details class="group">
+        <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
                 class="flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6">
                 Accordion item 03
