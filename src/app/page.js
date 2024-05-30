@@ -1,27 +1,7 @@
 import React from 'react';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai';
-import field from '/Users/franciscozuniga/zunigafran/public/field.jpg';
 
-const ProfessionalExperience = () => {
-  useEffect(() => {
-    // JavaScript for toggling the answers and rotating the arrows
-    document.querySelectorAll('[id^="job"]').forEach((button, index) => {
-      button.addEventListener('click', function () {
-        const answer = document.getElementById('answer' + (index + 1));
-        const arrow = document.getElementById('arrow' + (index + 1));
-
-        if (answer.style.display === 'none' || answer.style.display === '') {
-          answer.style.display = 'block';
-          arrow.style.transform = 'rotate(0deg)';
-        } else {
-          answer.style.display = 'none';
-          arrow.style.transform = 'rotate(-180deg)';
-        }
-      });
-    });
-  }, []);
-};
 
 export default function Home() {
   return (
@@ -159,8 +139,13 @@ export default function Home() {
                     </svg>
                 </div>
             </summary>
+            <div className='grid grid-cols-3 m-2'>
+            <div className="col-start-1 col-span-2">
             <div class="pl-6 pb-4">This is the first item's accordion body.</div>
-            <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon"></img>
+            </div>
+            <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-36 rounded-xl shadow-md"></img>
+            </div>
+            <span className="bg-[#000] rounded-xl p-2"> skill 1 </span>
         </details>
         <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
