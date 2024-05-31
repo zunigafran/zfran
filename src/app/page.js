@@ -126,7 +126,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
           <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6">
+              class="group flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold transition sm:p-6">
               Account Expeditor @ ProSource Wholesale
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -141,14 +141,14 @@ export default function Home() {
             </summary>
             <div className='grid grid-cols-3 m-2'>
               <div className="col-start-1 col-span-2">
-                <div class="pl-6 pb-4">This is the first item's accordion body.</div>
+                <div class="pl-6 pb-12">This is the first item's accordion body.</div>
+              <span className="bg-[#000] rounded-full p-2 ml-6"> skill 1 </span>
               </div>
               <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center">
-                <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-36 rounded-xl shadow-md opacity-75"></img>
+                <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
               </a>
             </div>
             <div className="ml-5 pb-5">
-              <span className="bg-[#000] rounded-full p-2"> skill 1 </span>
             </div>
           </details>
           <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
@@ -166,7 +166,17 @@ export default function Home() {
                 </svg>
               </div>
             </summary>
-            <div class="pb-4">This is the second item's accordion body.</div>
+            <div className='grid grid-cols-3 m-2'>
+              <div className="col-start-1 col-span-2">
+                <div class="pl-6 pb-12">This is the first item's accordion body.</div>
+              <span className="bg-[#000] rounded-full p-2 ml-6"> skill 1 </span>
+              </div>
+              <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center">
+                <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
+              </a>
+            </div>
+            <div className="ml-5 pb-5">
+            </div>
           </details>
           <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
@@ -183,7 +193,17 @@ export default function Home() {
                 </svg>
               </div>
             </summary>
-            <div class="pb-4">This is the third item's accordion body.</div>
+            <div className='grid grid-cols-3 m-2'>
+              <div className="col-start-1 col-span-2">
+                <div class="pl-6 pb-12">This is the first item's accordion body.</div>
+              <span className="bg-[#000] rounded-full p-2 ml-6"> skill 1 </span>
+              </div>
+              <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center">
+                <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
+              </a>
+            </div>
+            <div className="ml-5 pb-5">
+            </div>
           </details>
         </div>
       </section>
