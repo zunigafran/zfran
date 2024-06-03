@@ -6,23 +6,23 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai';
 export default function Home() {
   return (
     <main className="bg-primary text-[#fff]">
-      <section className="min-h-screen px-4 md:px-20 lg:px-8">
-        <nav className="py-10 mb-12 flex justify-between content-center">
-          <h1 className="w-1/4 text-xl">
+      <section className="min-h-screen grid-cols-4 px-4 md:px-20 lg:px-8">
+        <nav className="py-5 mb-12 flex justify-between text-center place-items-center">
+          <h1 className="text-xl place-content-center">
             Francisco Zuniga
           </h1>
-          <ul className="flex gap-8">
-            <li><a className="" href="#">Competencies</a></li>
-            <li><a className="" href="#">Work</a></li>
-            <li><a className="" href="#">Experience</a></li>
-            <li><a className="" href="#">Contact Me</a></li>
+          <ul className="flex col-span-2 gap-8 place-items-center -m-5">
+            <li><a className="none" href="#">Competencies</a></li>
+            <li><a className="none" href="#">Work</a></li>
+            <li><a className="none" href="#">Experience</a></li>
+            <li><a className="none" href="#">Contact Me</a></li>
           </ul>
-          <BsFillMoonStarsFill className="w-1/4 cursor-pointer text-2xl" />
+          <button className="bg-gradient-to-b from-[#4ade80] to-[#3b8af6] p-2 rounded-xl">Resume</button>
         </nav>
 
         {/* TEST HERO */}
 
-        <div className="h-screen flex items-end">
+        <div className="h-screen flex items-end text-center">
 
           {/* <image src="" className="w-full bg-cover bg-center py-32" alt="Field"> */}
           <div className="container mx-auto text-center content-end">
@@ -37,8 +37,8 @@ export default function Home() {
       {/* CORE COMPETENCIES */}
       <section className="container mx-auto px-4 md:px-20 lg:px-8 py-16">
         <h2 className="block antialiased tracking-normal text-4xl text-center leading-1 !leading-snug lg:!text-4xl">My Competencies</h2>
-        <div className="flex justify-center mt-10 gap-2 grid-cols-2 lg:grid-cols-4">
-          <div className="relative flex flex-col bg-clip-border rounded-xl shadow-md shadow-[#fff]/50 ax-w-sm lg:h-72 md:h-96 items-end overflow-hidden">
+        <div className="flex justify-center mt-10 gap-2 grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2">
+          <div className="relative flex flex-col bg-clip-border rounded-xl shadow-md shadow-[#fff]/50 max-w-sm lg:h-72 items-end overflow-hidden">
             <div className="bg-gradient-to-br from-[#ec4899] to-[#eab308] absolute inset-0"></div>
             <div className="p-6 relative flex flex-col justify-end hover:-translate-y-3 duration-300">
               <h4 className="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug">Full-Stack Development</h4>
@@ -73,7 +73,7 @@ export default function Home() {
         <h2 className="block antialiased tracking-normal text-4xl text-center leading-1 !leading-snug lg:!text-4xl">My Work</h2>
 
         {/* Test Card 2*/}
-        <div className="flex justify-center grid-col-1 lg:grid-cols-2">
+        <div className="flex justify-center grid grid-col-1 lg:grid-cols-2">
           <div className="relative mx-auto w-full max-w-sm pt-6 drop-shadow-lg">
             <a href="#" className="relative inline-block w-full transform transition-transform duration-300 ease-in-out bg-accent rounded-xl pb-2">
               <div className="rounded-lg">
@@ -86,7 +86,7 @@ export default function Home() {
                   <div className="mt-4 grid grid-cols-2">
                     <div className="flex items-center">
                       <div className="relative">
-                        <h2 className="line-clamp-1 text-base font-medium md:text-lg">Statue of Liberty</h2>
+                        <h2 className="line-clamp-1 text-base font-medium md:text-lg">Portfolio</h2>
                         <p className="mt-2 line-clamp-1 text-sm">Web Development</p>
                       </div>
                     </div>
@@ -108,8 +108,8 @@ export default function Home() {
                   <div className="mt-4 grid grid-cols-2">
                     <div className="flex items-center">
                       <div className="relative">
-                        <h2 className="line-clamp-1 text-base font-medium  md:text-lg">Statue of Liberty</h2>
-                        <p className="mt-2 line-clamp-1 text-sm">Web Development</p>
+                        <h2 className="text-base font-medium  md:text-lg">More Coming Soon...</h2>
+                        <p className="mt-2 text-sm">Web3, Finance, etc...</p>
                       </div>
                     </div>
                   </div>
@@ -124,9 +124,9 @@ export default function Home() {
       <section className="container mx-auto py-8 sm:py-16 lg:py-24">
         <h2 className="block antialiased tracking-normal text-4xl text-center leading-1 !leading-snug lg:!text-4xl">Professional Experience</h2>
         <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
-          <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
+          <details class="bg-accent border-gray-200 cursor-pointer group rounded-xl">
             <summary
-              class="group flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold transition sm:p-6">
+              class="group flex cursor-pointer list-none items-center justify-between w-full p-4 font-semibold transition">
               Account Expeditor @ ProSource Wholesale
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -139,21 +139,30 @@ export default function Home() {
                 </svg>
               </div>
             </summary>
-            <div className='grid grid-cols-3 m-2'>
+            <div className='grid grid-cols-3'>
               <div className="col-start-1 col-span-2">
-                <div class="pl-6 pb-12">This is the first item's accordion body.</div>
-              <span className="bg-[#000] rounded-full p-2 ml-6"> skill 1 </span>
+                <div class="pl-4 pb-12">Providing full-time support role aiding sales, warehouse, and operations teams, providing product knowledge training, using proprietary software, and fostering client relationships.</div>
+              <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center text-sm">Proprietary Software Proficiency</span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center place-content-center"> Process Optimization </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Client Interaction </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Agile Methodology </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Time Management </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Financial Acument </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Attention to Detail </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Critical Thinking </span>
               </div>
-              <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center">
+              </div>
+              <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center hover:opacity-50">
                 <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
               </a>
             </div>
             <div className="ml-5 pb-5">
             </div>
           </details>
-          <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
+          <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6">
+              class="flex cursor-pointer list-none items-center justify-between w-full p-4 font-semibold">
               Software Engineer @ Springboard
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -166,13 +175,26 @@ export default function Home() {
                 </svg>
               </div>
             </summary>
-            <div className='grid grid-cols-3 m-2'>
+            <div className='grid grid-cols-3'>
               <div className="col-start-1 col-span-2">
-                <div class="pl-6 pb-12">This is the first item's accordion body.</div>
-              <span className="bg-[#000] rounded-full p-2 ml-6"> skill 1 </span>
+                <div class="pl-4 pb-12">Learned code in popular programming languages, understand development theory and tools, and build web applications through hands-on projects to prepare for a job in the field.</div>
+                <div className="grid grid-cols-1 gap-2 sm:grid-cols-4">
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> DSA </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> HTML5 </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> CSS3 </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> JavaScript </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> React </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Node.JS </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Python </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Flask </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Express </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> OOP </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> APIs </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> SQL </span>
               </div>
-              <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center">
-                <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
+              </div>
+              <a href="https://www.springboard.com/courses/software-engineering-career-track/" className="justify-self-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkJvBi-YFMb_1o0k78tsmekdfbqszGsImtCw&s" alt="springIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
               </a>
             </div>
             <div className="ml-5 pb-5">
@@ -180,8 +202,8 @@ export default function Home() {
           </details>
           <details class="bg-accent border-gray-200 shadow-lg cursor-pointer group rounded-xl hover:bg-accent-50">
             <summary
-              class="flex cursor-pointer list-none items-center justify-between w-full px-4 py-4 font-semibold sm:p-6">
-              Accordion item 03
+              class="flex cursor-pointer list-none items-center justify-between w-full p-4 font-semibold">
+              Signals Intelligence Analyst (35N) @ U.S. Army
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                   stroke="currentColor" class="block h-5 w-5 group-open:hidden">
@@ -193,13 +215,24 @@ export default function Home() {
                 </svg>
               </div>
             </summary>
-            <div className='grid grid-cols-3 m-2'>
+            <div className='grid grid-cols-3'>
               <div className="col-start-1 col-span-2">
-                <div class="pl-6 pb-12">This is the first item's accordion body.</div>
-              <span className="bg-[#000] rounded-full p-2 ml-6"> skill 1 </span>
+                <div class="pl-4 pb-12">Analyzed foreign communications and activities, produce strategic reports for senior leaders, assist in surveillance equipment placement, and track operational patterns to aid in attack planning, functioning akin to a detective in gathering intelligence on enemy activities.</div>
+                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Data Analysis </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Data Interpretation </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Database Management </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Metadata </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Telecommunications </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> System Administration </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Technical Reporting </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Collobartion Tools </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Leadership </span>
+              <span className="bg-[#2563eb] rounded-full p-2 ml-6 shadow-md shadow-[#000] text-center"> Project Management </span>
               </div>
-              <a href="https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin" className="justify-self-center">
-                <img src="https://play-lh.googleusercontent.com/Wv2EpksNIai7HcQFi_OOmpZ8ysWNEvEZq8LsJH4xGYHWrcB1XK71Ki5siEmjMS_ZQCk=w480-h960-rw" alt="proIcon" className="w-24 rounded-xl shadow-md hover:opacity-50"></img>
+              </div>
+              <a href="https://www.goarmy.com/careers-and-jobs/signal-intelligence/languages-code/35n-signals-intelligence-analyst" className="justify-self-center">
+                <img src="https://www.artbrands.com/wp-content/uploads/25093ED-1.png" alt="armyIcon" className="bg-[#000] p-2 w-24 rounded-xl shadow-md hover:opacity-50"></img>
               </a>
             </div>
             <div className="ml-5 pb-5">
