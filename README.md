@@ -38,8 +38,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # To Do List
 -Collapse menu
+
 -Attach resume to button
+
 -Include Hero Image
+
 -Include shadows to all boxed items
+
 -Add Y Translate Fade in to each block
+
 -Redo README.md
