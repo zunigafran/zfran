@@ -47,4 +47,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 -Add Y Translate Fade in to each block
 
+-Clean the code
+
 -Redo README.md
+
+-Deploy
