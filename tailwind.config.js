@@ -14,11 +14,15 @@ module.exports = {
       center: true
     },
     colors: {
-        primary: '#1a191d',
-        secondary: '#3a393e',
-        accent: '#6a696e',
-        accent2: '#9a999e',
+        'primary': '#1a191d',
+        'secondary': '#3a393e',
+        'accent': '#6a696e',
+        'accent2': '#9a999e',
     },
+    boxShadow: {
+      'fz': '10px 10px 5px 1px rgba(255, 255, 255, .2)',
+      'fz2': '5px 5px 2px 1px rgba(255, 255, 255, .2)',
+    }
   },
   plugins: [],
 };
