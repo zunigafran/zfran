@@ -43,9 +43,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 -Include Hero Image
 
--Include shadows to all boxed items
+-Include shadows to all boxed items (Completed)
 
--Add Y Translate Fade in to each block
+-Add Y Translate Fade in to each block (Completed)
 
 -Clean the code
 
