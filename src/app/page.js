@@ -94,14 +94,14 @@ export default function Home() {
             <li className='py-5 text-4xl'><a className='none' href='#'>Resume</a></li>
             <li className='py-5 text-4xl'><a className='none' href='#'>Contact Me</a></li>
           </ul> */}
-        <details class='cursor-pointer group grid md:hidden'>
+        <details class='cursor-pointer group grid h-[10svh] md:hidden'>
             <summary
-              class='group cursor-pointer list-none p-4 font-semibold justify-items-stretch'>
+              class='group cursor-pointer list-none p-4 font-semibold justify-items-stretch grid grid-cols-3'>
               <div className='justify-self-start col-start-1 z-10'>
                 <FaBars className='block text-4xl group-open:hidden'/>
                 <FaTimes className='hidden text-4xl group-open:block'/>
               </div>
-              <a href='https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin' className='flex flex-col text-center text-4xl z-20'>
+              <a href='https://www.prosourcewholesale.com/showrooms/tx-prosource-of-austin' className='flex flex-col text-center place-items-stretch text-3xl z-20'>
               Francisco Zuniga
               </a>
             </summary>
