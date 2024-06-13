@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # zunigafran
 
 # Remaining Items
--Collapse menu
+-Collapse menu (Completed)
 
 -Attach resume to button
 
