@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Pika from '../assets/pika.gif';
 
 
 export default function Home() {

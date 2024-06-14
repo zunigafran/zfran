@@ -39,7 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # Remaining Items
 -Collapse menu (Completed)
 
--Attach resume to button
+-Attach resume to button (Get domain before attachment)
 
 -Include Hero Image
 
