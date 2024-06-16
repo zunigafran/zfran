@@ -3,16 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Pika from '../assets/pika.gif';
+import Image from 'next/image';
 
 
 export default function Home() {
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   const [nav, setNav] = useState(false);
-
-  const handleToggle = () => {
-    setNav(!nav);
-  };
 
 
   const messages = [
@@ -68,8 +64,8 @@ export default function Home() {
 
   return (
     <main className='bg-primary text-[#fff]'>
-      <section className='min-h-screen grid-cols-4 px-4'>
-        <nav className='py-5 mb-12 flex justify-between text-center place-items-center hidden md:flex'>
+      <section className='min-h-screen grid-cols-4'>
+        <nav className='py-5 mb-12 flex justify-between text-center place-items-center px-8 hidden md:flex'>
           <h1 className='text-xl place-content-center'>
             Francisco Zuniga
           </h1>
@@ -84,17 +80,6 @@ export default function Home() {
         </nav>
         
         {/* Mobile Menu */}
-        {/*OLD 
-        <div onClick={handleToggle} className='md:hidden z-10 p-6'>
-        {!nav ? <FaBars className='text-3xl'/> : <FaTimes className='text-3xl'/>}
-      </div>
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center'}>
-            <li className='py-5 text-4xl'><a className='none' href='#'>Competencies</a></li>
-            <li className='py-5 text-4xl'><a className='none' href='#'>Work</a></li>
-            <li className='py-5 text-4xl'><a className='none' href='#'>Experience</a></li>
-            <li className='py-5 text-4xl'><a className='none' href='#'>Resume</a></li>
-            <li className='py-5 text-4xl'><a className='none' href='#'>Contact Me</a></li>
-          </ul> */}
         <details class='cursor-pointer group grid h-[10svh] md:hidden'>
             <summary
               class='group cursor-pointer list-none p-4 font-semibold justify-items-stretch grid grid-cols-3'>
@@ -117,14 +102,14 @@ export default function Home() {
 
         {/* TEST HERO */}
         <div className='h-screen flex items-end text-center'>
-
-          {/* <image src='' className='w-full bg-cover bg-center py-32' alt='Field'> */}
-          <div className='container mx-auto text-center content-end'>
+            <div className='backgroundImage opacity-50'></div>
+          <div className='container mx-auto text-center content-end absolute bottom-5'>
             <h2 className='text-5xl py-2 font-medium md:text-6xl'>Francisco Zuniga</h2>
             <h3 className='text-2xl py-2 md:text-4xl'>Full-Stack Developer</h3>
-            <p className='text-md py-5 leading-8 md:text-xl'>Professional Summary Here</p>
+            <p className='text-md py-5 leading-8 mx-[18%] md:text-xl'>I am a junior full-stack developer, adept at utilizing cutting-edge technologies and methodologies to develop robust software
+solutions. I have a proven track record of applying my knowledge to my tasks and projects to meet and exceed project goals. Seeking opportunities to apply my expertise in software development to drive innovation and contribute to the growth of a
+dynamic organization.</p>
           </div>
-          {/* </image> */}
         </div>
 
       </section>
@@ -195,7 +180,7 @@ export default function Home() {
               <div className='rounded-lg'>
                 <div className='relative flex h-60 justify-center overflow-hidden rounded-t-xl'>
                   <div className='w-full transform transition-transform duration-500 ease-in-out hover:scale-110'>
-                    <img src='https://media.tenor.com/42bcTn0iuVgAAAAi/under-construction-pikachu.gif' className='w-full' alt='' />
+                    <Image src="/pika.gif" alt='pikaJackHammer' width={384} height={240}/>
                   </div>
                 </div>
                 <div className='pl-2'>
@@ -337,7 +322,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <section>
-        <footer className='w-full h-[24rem] bg-secondary body-font h-64 grid grid-cols-4 flex'>
+        <footer className='w-full h-[16rem] bg-secondary body-font h-64 grid grid-cols-4 flex'>
           <div className='container flex flex-col flex-wrap items-start pl-12 py-8 col-span-3'>
             <h1 className='text-2xl font-semibold'>Available for Interships and Full-Time Opportunities.</h1>
             <p className='text-xl font-normal pb-4'>Send me an email or message me on my socials!</p>

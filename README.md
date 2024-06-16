@@ -41,7 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 -Attach resume to button (Get domain before attachment)
 
--Include Hero Image
+-Include Hero Image (Completed)
 
 -Include shadows to all boxed items (Completed)
 
