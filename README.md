@@ -45,7 +45,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 -Add Y Translate Fade in to each block (Completed)
 
--Attach resume to button (Get domain before attachment)
+-Attach resume to button (Get domain before attachment)(Completed)
 
 -Section Links (Completed)
 
