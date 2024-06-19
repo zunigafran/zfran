@@ -53,10 +53,25 @@ a:hover {
 }
 
 .backgroundImage {
-  background-image: url('/lotuspond.png');
+  background-image: url('/barton.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+}
+
+.sideBar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  box-shadow: -10pc 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
