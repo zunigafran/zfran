@@ -10,12 +10,41 @@ export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const messages = [
-    <span><i>"Your warmth radiates upon those around you."</i><br /><br />A Panda Express Fortune Cookie</span>,
-    <span><i>"Some people feel the rain, others just get wet.”</i><br /><br />Bob Dylan</span>,
-    <span><i>"A person who never made a mistake, never tried anything new.”</i><br /><br />Albert Einstein</span>,
-    <span><i>"When someone shows you who they are, believe them the first time.”</i><br /><br />Maya Angelou</span>,
-    <span><i>"The truth is rarely pure and never simple.”</i><br /><br />Oscar Wilde</span>,
-    <span><i>"There is no monopoly on truth"</i><br /><br />Justice Elena Kagan</span>,
+    <span>
+      <i>"Your warmth radiates upon those around you."</i>
+      <br />
+      <br />A Panda Express Fortune Cookie
+    </span>,
+    <span>
+      <i>"Some people feel the rain, others just get wet.”</i>
+      <br />
+      <br />
+      Bob Dylan
+    </span>,
+    <span>
+      <i>"A person who never made a mistake, never tried anything new.”</i>
+      <br />
+      <br />
+      Albert Einstein
+    </span>,
+    <span>
+      <i>"When someone shows you who they are, believe them the first time.”</i>
+      <br />
+      <br />
+      Maya Angelou
+    </span>,
+    <span>
+      <i>"The truth is rarely pure and never simple.”</i>
+      <br />
+      <br />
+      Oscar Wilde
+    </span>,
+    <span>
+      <i>"There is no monopoly on truth"</i>
+      <br />
+      <br />
+      Justice Elena Kagan
+    </span>,
   ]; // Example messages
 
   useEffect(() => {
@@ -97,12 +126,19 @@ export default function Home() {
             </li>
           </ul>
           <button className="bg-gradient-to-b from-[#4ade80] to-[#3b8af6] p-2 rounded-xl text-xl">
-            Resume
+            <a
+              className="none"
+              href="/Francisco Zuniga.pdf"
+              alt="resume"
+              download="Francisco Zuniga"
+            >
+              Resume
+            </a>
           </button>
         </nav>
         {/* SIDEBAR/MOBILE MENU */}
         <details class="bg-primary cursor-pointer group grid sticky top-0 z-[999] flex lg:hidden">
-          <summary class="group cursor-pointer list-none font-semibold h-[20svh] justify-items-stretch content-center grid grid-cols-3 inline">
+          <summary class="group cursor-pointer list-none font-semibold h-[12svh] justify-items-stretch content-center grid grid-cols-3 inline">
             <div className="justify-self-start col-start-1 pl-8 z-[999]">
               <FaBars className="block text-4xl group-open:hidden" />
               <FaTimes className="hidden text-4xl group-open:block" />
@@ -131,7 +167,12 @@ export default function Home() {
               </a>
             </li>
             <li className="py-5 text-3xl">
-              <a className="none" href="#resume">
+              <a
+                className="none"
+                href="/Francisco Zuniga.pdf"
+                alt="resume"
+                download="Francisco Zuniga"
+              >
                 Resume
               </a>
             </li>
