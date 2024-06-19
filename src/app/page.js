@@ -139,7 +139,7 @@ export default function Home() {
         {/* SIDEBAR/MOBILE MENU */}
         <details class="bg-primary cursor-pointer group grid sticky top-0 z-[999] flex lg:hidden">
           <summary class="group cursor-pointer list-none font-semibold h-[12svh] justify-items-stretch content-center grid grid-cols-3 inline">
-            <div className="justify-self-start col-start-1 pl-8 z-[999]">
+            <div className="justify-self-start col-start-1 pl-8 z-[999] mt-4">
               <FaBars className="block text-4xl group-open:hidden" />
               <FaTimes className="hidden text-4xl group-open:block" />
             </div>
