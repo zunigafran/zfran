@@ -1,57 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website for Francisco Zuniga
 
-## Getting Started
+### A showcase of my diverse software engineering projects and technical expertise, highlighting my journey and skills in creating innovative solutions
 
-First, run the development server:
+Welcome to my portfolio repository! I'm Francisco Zuniga, a dynamic software engineer passionate about crafting innovative and efficient software solutions. This repository is a comprehensive showcase of my capabilities, featuring a collection of completed projects and detailed technical expertise. Dive into my proficiency across a range of programming languages (JavaScript, Python, SQL), frameworks (React, Next.js, Flask), and agile development practices. It's tailored for potential employers, collaborators, and peers seeking insights into my professional journey and skill set in full-stack software engineering. Explore my work and feel free to connect for inquiries or collaboration opportunities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+INSERT DIAGRAM HERE
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Report bugs or provide coding tips
+To report bugs or how to optimize the site email me at [fzuniga@gmail.com](mailto:fzuniga@gmail.com) with the subject TechSage - (Reason for Email)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Email Reasons:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Bug
+- Optimization
+- Contribution
+- Other
 
-## Learn More
+## Known issues (Things I will need practice)
+- Getting the images to load faster
+- Breakpoints for the Nav
+- Better spacing for the Nav
+- Footer rendering issue on small screens under 640px
 
-To learn more about Next.js, take a look at the following resources:
+On refactor I want to do the following:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Better optimization for quicker loading
+- Removing conflicting classes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Refactoring Wishlist 
+
+- Modern Layout and Design
+- Include project pages
+- Interactive Timeline for jobs
+  
+
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# zunigafran
-
-# Remaining Items
--Collapse menu (Completed)
-
--Include Hero Image (Completed)
-
--Include shadows to all boxed items (Completed)
-
--Add Y Translate Fade in to each block (Completed)
-
--Attach resume to button (Get domain before attachment)(Completed)
-
--Section Links (Completed)
-
--Deploy
-
--Clean the code (Completed)
-
--Redo README.md
 
