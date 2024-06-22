@@ -647,7 +647,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <section id="contact">
-          <footer className="w-full h-[16rem] bg-secondary body-font h-64 grid grid-cols-4 flex sm:h-[50svh]">
+          <footer className="w-full h-[16rem] bg-secondary body-font h-64 grid grid-cols-4 flex sm:h-[100svh]">
             <div className="container flex flex-col flex-wrap items-start pl-12 py-8 col-span-3">
               <h1 className="text-2xl font-semibold">
                 Available for Interships and Full-Time Opportunities.
