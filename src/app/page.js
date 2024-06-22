@@ -432,7 +432,7 @@ export default function Home() {
           </h2>
           <div className="mt-10 flex flex-col items-center">
             <p className="block antialiased font-sans text-base font-light leading-relaxed my-2 text-center">
-              I'm always open to discussing new projects, creative ideas, or
+              I&apos;m always open to discussing new projects, creative ideas, or
               opportunities to be part of your vision.
             </p>
             <a
