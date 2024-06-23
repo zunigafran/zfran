@@ -648,7 +648,7 @@ export default function Home() {
         {/* FOOTER */}
         <section id="contact">
           <footer className="w-full bg-secondary body-font flex">
-            <div className="container items-start px-12 py-8 ">
+            <div className="container items-start px-12 py-8">
               <h1 className="text-2xl font-semibold">
               Available for Interships and Full-Time Opportunities.
               </h1>
@@ -678,7 +678,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="bg-[#000] flex min-h-full place-content-baseline">
+            <div className="bg-[#000] flex min-h-full place-content-baseline w-[30rem]">
               <h1 className="text-xl px-[15%] pt-10 ${fadeClass}" id="messages">
                 {messages[currentMessageIndex]}
               </h1>
