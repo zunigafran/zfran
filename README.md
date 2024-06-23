@@ -32,8 +32,6 @@ Refactoring Wishlist
 - Modern Layout and Design
 - Include project pages
 - Interactive Timeline for jobs
-  
-
 
 ## Deploy on Vercel
 

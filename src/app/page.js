@@ -647,12 +647,12 @@ export default function Home() {
 
         {/* FOOTER */}
         <section id="contact">
-          <footer className="w-full h-[16rem] bg-secondary body-font h-64 grid grid-cols-4 flex sm:h-[100svh]">
-            <div className="container flex flex-col flex-wrap items-start pl-12 py-8 col-span-3">
+          <footer className="w-full bg-secondary body-font flex">
+            <div className="container items-start px-12 py-8 ">
               <h1 className="text-2xl font-semibold">
-                Available for Interships and Full-Time Opportunities.
+              Available for Interships and Full-Time Opportunities.
               </h1>
-              <p className="text-xl font-normal pb-4">
+              <p className="text-xl font-normal py-4">
                 Send me an email or message me on my socials!
               </p>
               <div className="container flex flex-col flex-wrap mx-auto items-start">
@@ -678,7 +678,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="bg-[#000] flex min-h-full min-w-full place-content-baseline">
+            <div className="bg-[#000] flex min-h-full place-content-baseline">
               <h1 className="text-xl px-[15%] pt-10 ${fadeClass}" id="messages">
                 {messages[currentMessageIndex]}
               </h1>
