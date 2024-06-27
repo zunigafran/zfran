@@ -413,7 +413,7 @@ export default function Home() {
                     </span>
                     <span className="bg-[#2563eb] rounded-full p-2 ml-6 drop-shadow-lg text-center">
                       {" "}
-                      Financial Acument{" "}
+                      Financial Acumen{" "}
                     </span>
                     <span className="bg-[#2563eb] rounded-full p-2 ml-6 drop-shadow-lg text-center">
                       {" "}
@@ -617,7 +617,7 @@ export default function Home() {
                     </span>
                     <span className="bg-[#2563eb] rounded-full p-2 ml-6 drop-shadow-lg text-center">
                       {" "}
-                      Collobartion Tools{" "}
+                      Collaboration Tools{" "}
                     </span>
                     <span className="bg-[#2563eb] rounded-full p-2 ml-6 drop-shadow-lg text-center">
                       {" "}
